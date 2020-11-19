@@ -1,0 +1,40 @@
+#body {
+    background-color: #34568B;
+ }
+
+#body h2{
+    color: white;
+    margin-top: 5%;
+    text-align: center;
+}
+.entireCalculator
+{
+    background-color: white;
+    height: 500px;
+    width: 50%;
+    margin: auto;
+    margin-top: 5%;
+    border: black solid;
+    border-radius: 10px;
+}
+.calculatorPreviousCalc
+{
+    display: block;
+    text-align: right;
+    border: violet solid;
+    padding-top: 5%;
+    padding-right: 1%;
+}
+.calculatorDisplay
+{
+    display: block;
+    text-align: right;
+    border: tomato solid;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 1%;
+}
+
+ button {
+    display: block;
+}
