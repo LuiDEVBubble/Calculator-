@@ -8,6 +8,7 @@ function solve()
 {
 
     let x = document.getElementById("displayResult").value;
+    document.getElementById("previousResult").value = x;
     // if (x == null)
     // {
     //     return;
@@ -20,4 +21,5 @@ function solve()
 function clr()
 {
     document.getElementById("displayResult").value = "";
+    document.getElementById("previousResult").value = "";
 }
