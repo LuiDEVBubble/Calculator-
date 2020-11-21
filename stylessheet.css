@@ -9,13 +9,14 @@
 }
 .entireCalculator
 {
+    padding: 15px;
     background-color: white;
-    height: 500px;
-    width: 50%;
+    height: min-content;
+    width: 600px;
     margin: auto;
-    margin-top: 5%;
+    margin-top: 5%; 
     border: black solid;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 .calculatorPreviousCalc
 {
@@ -38,7 +39,27 @@
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-}
-.calculatorButtons button{
     
+}
+.columnsDiv{
+    margin: auto;
+    
+}
+.-item{
+    
+    /* margin: 10%; */
+    /* margin-bottom: 7%; */
+    margin-top: 7%;
+    width: 90px;
+    flex-basis: 80%;
+    flex-grow: 1;
+    /* padding: 1%;
+    border: tomato solid;
+    border-radius: 10px; */
+}
+.-item button{
+    height: 100%;
+    width:  100%;
+    background-color: lightgray;
+    color: black;
 }

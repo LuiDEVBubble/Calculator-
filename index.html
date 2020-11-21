@@ -19,7 +19,7 @@
 <body id="body">
 
     <h2>Final exam Calculator Project</h2>
-    <div class="entireCalculator container ">
+    <div class="entireCalculator container-small">
         <div class="calculatorPreviousCalc flex-row">
             <h5>Previous Calculation</h5>
         </div>
@@ -27,64 +27,51 @@
             <h4>Test</h4>
         </div>
         <div class="calculatorButtons flex-row " style="border: red solid;">
-            <div class="d-flex flex-column bd-highlight mb-3 w-25">
-                <!-- <button class="flex-row btn btn-primary p-2 bd-highlight"></button>
-                <button class="flex-row btn btn-primary p-2 bd-highlight"></button>
-                <button class="flex-row btn btn-primary p-2 bd-highlight"></button>
-                <button class="flex-row btn btn-primary p-2 bd-highlight"></button>
-                <button class="flex-row btn btn-primary p-2 bd-highlight"></button> -->
-                <div class="p-2 bd-highlight">Flex item</div>
-                <div class="p-2 bd-highlight">Flex item</div>
-                <div class="p-2 bd-highlight">Flex item</div>
+            <div class="columnsDiv d-flex flex-column bd-highlight mb-3">
+                <div class="-item d-flex flex-row"><button class="btn btn-primary">0</button></div>
+                <div class="-item d-flex flex-row"><button class="btn btn-primary">sin</button></div>
+                <div class="-item d-flex flex-row"><button class="btn btn-primary">cos</button></div>
+                <div class="-item d-flex flex-row"><button class="btn btn-primary">tan</button></div>
+                <div class="-item d-flex flex-row"><button class="btn btn-primary">EXP</button></div>
             </div>
 
-            <div class="d-flex flex-column bd-highlight mb-3 w-25" >
-                <!-- <button class="flex-row btn btn-primary p-2 bd-highlight"></button>
-                <button class="flex-row btn btn-primary p-2 bd-highlight"></button>
-                <button class="flex-row btn btn-primary p-2 bd-highlight"></button>
-                <button class="flex-row btn btn-primary p-2 bd-highlight"></button>
-                <button class="flex-row btn btn-primary p-2 bd-highlight"></button> -->
+            <div class="columnsDiv d-flex flex-column bd-highlight mb-3">
+                <div class="-item d-flex flex-row"><button class="btn btn-primary">x!</button></div>
+                <div class="-item d-flex flex-row"><button class="btn btn-primary">ln</button></div>
+                <div class="-item d-flex flex-row"><button class="btn btn-primary">log</button></div>
+                <div class="-item d-flex flex-row"><button class="btn btn-primary">0</button></div>
+                <div class="-item d-flex flex-row"><button class="btn btn-primary">x<sup>y</sup></button></div>
             </div>
-            <div class="d-flex flex-column bd-highlight mb-3 align-self-md-stretch">
-                <!-- <button class="flex-row btn btn-primary p-2 bd-highlight">(</button>
-                <button class="flex-row btn btn-primary p-2 bd-highlight">7</button>
-                <button class="flex-row btn btn-primary p-2 bd-highlight">4</button>
-                <button class="flex-row btn btn-primary p-2 bd-highlight">1</button>
-                <button class="flex-row btn btn-primary p-2 bd-highlight">0</button> -->
+            <div class="columnsDiv d-flex flex-column bd-highlight mb-3">
+                <div class="-item d-flex flex-row"><button class="btn btn-primary">(</button></div>
+                <div class="-item d-flex flex-row"><button class="btn btn-primary">7</button></div>
+                <div class="-item d-flex flex-row"><button class="btn btn-primary">4</button></div>
+                <div class="-item d-flex flex-row"><button class="btn btn-primary">1</button></div>
+                <div class="-item d-flex flex-row"><button class="btn btn-primary">0</button></div>
             </div>
-            <div class="d-flex flex-column bd-highlight align-self-md-stretch" style="border: black solid;">
-                <!-- <button class="flex-row btn btn-primary  bd-highlight">)</button>
-                <button class="flex-row btn btn-primary p-2 bd-highlight">8</button>
-                <button class="flex-row btn btn-primary p-2 bd-highlight">5</button>
-                <button class="flex-row btn btn-primary p-2 bd-highlight">2</button>
-                <button class="flex-row btn btn-primary p-2 bd-highlight">.</button> -->
+            <div class="columnsDiv d-flex flex-column bd-highlight mb-3">
+                <div class="-item d-flex flex-row"><button class="btn btn-primary">)</button></div>
+                <div class="-item d-flex flex-row"><button class="btn btn-primary">8</button></div>
+                <div class="-item d-flex flex-row"><button class="btn btn-primary">5</button></div>
+                <div class="-item d-flex flex-row"><button class="btn btn-primary">2</button></div>
+                <div class="-item d-flex flex-row"><button class="btn btn-primary">.</button></div>
             </div>
-            <div class="d-flex flex-column bd-highlight mb-3">
-                <!-- <button class="flex-row btn btn-primary p-2 bd-highlight">%</button>
-                <button class="flex-row btn btn-primary p-2 bd-highlight">9</button>
-                <button class="flex-row btn btn-primary p-2 bd-highlight">6</button>
-                <button class="flex-row btn btn-primary p-2 bd-highlight">3</button>
-                <button class="flex-row btn btn-primary p-2 bd-highlight">=</button> -->
+            <div class="columnsDiv d-flex flex-column bd-highlight mb-3">
+                <div class="-item d-flex flex-row"><button class="btn btn-primary">%</button></div>
+                <div class="-item d-flex flex-row"><button class="btn btn-primary">9</button></div>
+                <div class="-item d-flex flex-row"><button class="btn btn-primary">6</button></div>
+                <div class="-item d-flex flex-row"><button class="btn btn-primary">3</button></div>
+                <div class="-item d-flex flex-row"><button class="btn btn-primary">=</button></div>
             </div>
-            <div class="d-flex flex-column bd-highlight mb-3 ">
-                <!-- <button class="flex-row btn btn-primary p-2 bd-highlight">AC</button>
-                <button class="flex-row btn btn-primary p-2 bd-highlight">/</button>
-                <button class="flex-row btn btn-primary p-2 bd-highlight">*</button>
-                <button class="flex-row btn btn-primary p-2 bd-highlight">-</button>
-                <button class="flex-row btn btn-primary p-2 bd-highlight">+</button> -->
-                
+            <div class="columnsDiv d-flex flex-column bd-highlight mb-3">
+                <div class="-item d-flex flex-row"><button class="btn btn-primary">AC</button></div>
+                <div class="-item d-flex flex-row"><button class="btn btn-primary">/</button></div>
+                <div class="-item d-flex flex-row"><button class="btn btn-primary">*</button></div>
+                <div class="-item d-flex flex-row"><button class="btn btn-primary">-</button></div>
+                <div class="-item d-flex flex-row"><button class="btn btn-primary">+</button></div>
             </div>
-
         </div>
-
-
-
-
     </div>
-
-
-
-
 </body>
 
 
