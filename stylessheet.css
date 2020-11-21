@@ -43,7 +43,7 @@
 }
 .columnsDiv{
     margin: auto;
-    
+
 }
 .-item{
     
@@ -57,7 +57,7 @@
     border: tomato solid;
     border-radius: 10px; */
 }
-.-item button{
+.-item button, input{
     height: 100%;
     width:  100%;
     background-color: lightgray;

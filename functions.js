@@ -1,37 +1,23 @@
-let calculator = {
 
-    Array: [],
+function display(val)
+{
+    document.getElementById("displayResult").value +=val;
+ }
+//function for evaluation
+function solve()
+{
 
-    Add: (par1, par2) => {
-        return par1 + par2;
-    },
-
-    Subtract: (par1, par2) =>{
-        return par1 - par2;
-    },
-
-    Multiply: (par1, par2) =>{
-        return  par1 * par2;
-    },
-
-    Divide: (par1, par2) =>{
-        return par1 / par2;
-    },
-
-    AC: () =>{
-        return 0;
-    }
-
-
+    let x = document.getElementById("displayResult").value;
+    // if (x == null)
+    // {
+    //     return;
+    // }
+    let y = eval(x);
+    
+    document.getElementById("displayResult").value = y;
 }
-
-
-function display(clicked_id){
-    // alert(clicked_id);
-
-    //value is assigned to x variable
-    let x = document.getElementById(clicked_id).value;
-
-    document.getElementById("displayResult").innerHTML = x;
-
+//function for clearing the display
+function clr()
+{
+    document.getElementById("displayResult").value = "";
 }

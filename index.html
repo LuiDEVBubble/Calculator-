@@ -22,53 +22,55 @@
     <div class="entireCalculator container-small">
         <div class="calculatorPreviousCalc flex-row">
             <h5>Previous Calculation</h5>
+            <input type="text" id="previousResult" placeholder="" disabled/>
         </div>
         <div class="calculatorDisplay flex-row">
-            <h4 id="displayResult">Test</h4>
+            <!-- <h4 type="text" id="displayResult">Test</h4> -->
+            <input type="text" id="displayResult" placeholder="Enter A Number" disabled/>
         </div>
         <div class="calculatorButtons flex-row ">
             <div class="columnsDiv d-flex flex-column bd-highlight mb-3">
-                <div class="-item d-flex flex-row"><button class="btn btn-primary">0</button></div>
-                <div class="-item d-flex flex-row"><button class="btn btn-primary">sin</button></div>
-                <div class="-item d-flex flex-row"><button class="btn btn-primary">cos</button></div>
-                <div class="-item d-flex flex-row"><button class="btn btn-primary">tan</button></div>
-                <div class="-item d-flex flex-row"><button class="btn btn-primary">EXP</button></div>
+                <div class="-item d-flex flex-row"><input type="button" value=":::::" class="btn btn-primary"></input></div>
+                <div class="-item d-flex flex-row"><input type="button" value="sin" class="btn btn-primary"></input></div>
+                <div class="-item d-flex flex-row"><input type="button" value="cos" class="btn btn-primary"></input></div>
+                <div class="-item d-flex flex-row"><input type="button" value="tan" class="btn btn-primary"></input></div>
+                <div class="-item d-flex flex-row"><input type="button" value="EXP" class="btn btn-primary"></input></div>
             </div>
 
             <div class="columnsDiv d-flex flex-column bd-highlight mb-3">
-                <div class="-item d-flex flex-row"><button class="btn btn-primary">x!</button></div>
-                <div class="-item d-flex flex-row"><button class="btn btn-primary">ln</button></div>
-                <div class="-item d-flex flex-row"><button class="btn btn-primary">log</button></div>
-                <div class="-item d-flex flex-row"><button class="btn btn-primary">√ </button></div>
-                <div class="-item d-flex flex-row"><button class="btn btn-primary">x<sup>y</sup></button></div>
+                <div class="-item d-flex flex-row"><input type="button" value="x!" class="btn btn-primary"></input></div>
+                <div class="-item d-flex flex-row"><input type="button" value="ln" class="btn btn-primary"></input></div>
+                <div class="-item d-flex flex-row"><input type="button" value="log" class="btn btn-primary"></input></div>
+                <div class="-item d-flex flex-row"><input type="button" value="√" class="btn btn-primary"></input></div>
+                <div class="-item d-flex flex-row"><input type="button" value="xy" class="btn btn-primary"></input></div>
             </div>
             <div class="columnsDiv d-flex flex-column bd-highlight mb-3">
-                <div class="-item d-flex flex-row"><button id="(" value="(" onClick="display(this.id)" class="btn btn-primary">(</button></div>
-                <div class="-item d-flex flex-row"><button id="7" value="7" onClick="display(this.id)" class="btn btn-primary">7</button></div>
-                <div class="-item d-flex flex-row"><button id="4" value="4" onClick="display(this.id)" class="btn btn-primary">4</button></div>
-                <div class="-item d-flex flex-row"><button id="1" value="1" onClick="display(this.id)" class="btn btn-primary">1</button></div>
-                <div class="-item d-flex flex-row"><button id="0" value="0" onClick="display(this.id)" class="btn btn-primary">0</button></div>
+                <div class="-item d-flex flex-row"><input type="button" value="(" onClick="display('(')" class="btn btn-primary"></input></div>
+                <div class="-item d-flex flex-row"><input type="button" value="7" onClick="display('7')" class="btn btn-primary"></input></div>
+                <div class="-item d-flex flex-row"><input type="button" value="4" onClick="display('4')" class="btn btn-primary"></input></div>
+                <div class="-item d-flex flex-row"><input type="button" value="1" onClick="display('1')" class="btn btn-primary"></input></div>
+                <div class="-item d-flex flex-row"><input type="button" value="0" onClick="display('0')" class="btn btn-primary"></input></div>
             </div>
             <div class="columnsDiv d-flex flex-column bd-highlight mb-3">
-                <div class="-item d-flex flex-row"><button id=")" value=")" onClick="display(this.id)" class="btn btn-primary">)</button></div>
-                <div class="-item d-flex flex-row"><button id="8" value="8" onClick="display(this.id)" class="btn btn-primary">8</button></div>
-                <div class="-item d-flex flex-row"><button id="5" value="5" onClick="display(this.id)" class="btn btn-primary">5</button></div>
-                <div class="-item d-flex flex-row"><button id="2" value="2" onClick="display(this.id)" class="btn btn-primary">2</button></div>
-                <div class="-item d-flex flex-row"><button id="." value="." onClick="display(this.id)" class="btn btn-primary">.</button></div>
+                <div class="-item d-flex flex-row"><input type="button" value=")" onClick="display(')')" class="btn btn-primary"></input></div>
+                <div class="-item d-flex flex-row"><input type="button" value="8" onClick="display('8')" class="btn btn-primary"></input></div>
+                <div class="-item d-flex flex-row"><input type="button" value="5" onClick="display('5')" class="btn btn-primary"></input></div>
+                <div class="-item d-flex flex-row"><input type="button" value="2" onClick="display('2')" class="btn btn-primary"></input></div>
+                <div class="-item d-flex flex-row"><input type="button" value="." onClick="display('.')" class="btn btn-primary"></input></div>
             </div>
             <div class="columnsDiv d-flex flex-column bd-highlight mb-3">
-                <div class="-item d-flex flex-row"><button id="%" value="%" onClick="display(this.id)" class="btn btn-primary">%</button></div>
-                <div class="-item d-flex flex-row"><button id="9" value="9" onClick="display(this.id)" class="btn btn-primary">9</button></div>
-                <div class="-item d-flex flex-row"><button id="6" value="6" onClick="display(this.id)" class="btn btn-primary">6</button></div>
-                <div class="-item d-flex flex-row"><button id="3" value="3" onClick="display(this.id)" class="btn btn-primary">3</button></div>
-                <div class="-item d-flex flex-row"><button id="=" value="=" onClick="display(this.id)" class="btn btn-primary">=</button></div>
+                <div class="-item d-flex flex-row"><input type="button" value="%" onClick="display('%')" class="btn btn-primary"></input></div>
+                <div class="-item d-flex flex-row"><input type="button" value="9" onClick="display('9')" class="btn btn-primary"></input></div>
+                <div class="-item d-flex flex-row"><input type="button" value="6" onClick="display('6')" class="btn btn-primary"></input></div>
+                <div class="-item d-flex flex-row"><input type="button" value="3" onClick="display('3')" class="btn btn-primary"></input></div>
+                <div class="-item d-flex flex-row"><input type="button" value="=" onClick="solve()" class="btn btn-primary"></input></div>
             </div>
             <div class="columnsDiv d-flex flex-column bd-highlight mb-3">
-                <div class="-item d-flex flex-row"><button id="AC" value="0" onClick="display(this.id)" class="btn btn-primary">AC</button></div>
-                <div class="-item d-flex flex-row"><button id="/" value="/" onClick="display(this.id)" class="btn btn-primary">÷</button></div>
-                <div class="-item d-flex flex-row"><button id="*" value="*" onClick="display(this.id)" class="btn btn-primary">×</button></div>
-                <div class="-item d-flex flex-row"><button id="-" value="-" onClick="display(this.id)" class="btn btn-primary">-</button></div>
-                <div class="-item d-flex flex-row"><button id="+" value="+" onClick="display(this.id)" class="btn btn-primary">+</button></div>
+                <div class="-item d-flex flex-row"><input type="button" value="AC" onClick="clr()" class="btn btn-primary"></input></div>
+                <div class="-item d-flex flex-row"><input type="button" value="÷" onClick="display('/')" class="btn btn-primary"></input></div>
+                <div class="-item d-flex flex-row"><input type="button" value="*" onClick="display('*')" class="btn btn-primary"></input></div>
+                <div class="-item d-flex flex-row"><input type="button" value="-" onClick="display('-')" class="btn btn-primary"></input></div>
+                <div class="-item d-flex flex-row"><input type="button" value="+" onClick="display('+')" class="btn btn-primary"></input></div>
             </div>
         </div>
     </div>
